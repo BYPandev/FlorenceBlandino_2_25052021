@@ -1,10 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <meta charset="utf-8" />
+    <title>Reservia</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="global.css">
 </head>
+
 <body>
-    <h1>Reservia</h1>
+   <div id="page_block">
+       <header>
+           <div id="page_header">
+               <div id="logo">
+                   <img src="images/logo/Reservia@3x.png" alt="Logo de Reservia" />
+               </div>
+
+               <nav>
+                   <ul>
+                       <li><a href="#hebergements">Hébergements</a></li>
+                       <li><a href="activites">Activités</a></li>
+                       <li><a href="#"><strong>S'inscrire</strong></a></li>
+                   </ul>
+               </nav>
+           </div>
+
+           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+           <p>En plein centre ville ou en pleine nature</p>
+
+           <div id="searchbar">
+               <span class="mapmarker"><i class="fas fa-map-marker-alt"></i></span>
+               <input class="searfield" type="search" name="recherche" value="Marseille, France">
+               <input class="searchbutton" type="submit" name="recherchez" value="Rechercher">
+           </div>
+
+           <div id="filters">
+               <h2>Filtres</h2>
+               <ul>
+                <a href="#"><li><span class="iconfilter"><i class="fas fa-money-bill-wave-alt"></i></span>Économique</li></a>
+				<a href="#"><li><span class="iconfilter"><i class="fas fa-child"></i></span>Familial</li></a>
+				<a href="#"><li><span class="iconfilter"><i class="fas fa-heart"></i></span>Romantique</li></a>
+				<a href="#"><li><span class="iconfilter"><i class="fas fa-dog"></i></span>Animaux autorisés</li></a>
+               </ul>    
+           </div>
+
+           <p><span class="inconinfo"><i class="fas fa-info"></i></span>Plus de 500 logements sont disponibles dans cette ville</p>           
+       </header>
+   </div>
 </body>
 </html>

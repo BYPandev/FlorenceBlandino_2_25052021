@@ -1,0 +1,137 @@
+#page_header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#logo img
+{
+    width: 100px;
+    height: 50px;
+}
+
+/* Search bar */
+
+#searchbar
+{
+    display: flex;
+
+}
+
+.mapmarker
+{
+    background-color: #f2f2f2;
+    border-radius : 1em 0em 0em 1em;
+}
+
+.mapmarker i
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    height: 40px;
+    width: 40px;
+}
+
+.searchfield
+{
+    border: 1px solid #f2f2f2;
+    padding: 8px;
+    color: black;
+    font-family: 'Raleway';
+    font-weight: bold;
+    border-right-style: none;
+    border-left-style: none;
+
+}
+
+.searchbutton
+{
+    border: none;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: bold;
+    background-color: #0065FC;
+    border-radius: 0em 1em 1em 0em;
+}
+
+/* Filters */
+
+#filters
+{
+    display: flex;
+    align-items: center;
+
+}
+
+#filters ul
+{
+    list-style: none;
+    display: flex;
+}
+
+#filters li
+{
+    margin-right: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #f2f2f2;
+    border-radius: 50px;
+    padding: 0px 20px 0px 0px;
+}
+
+ul a
+{
+    color: black;
+    text-decoration: none;
+}
+
+li:hover
+{
+    background-color: #deebff;
+}
+
+.iconfilter
+{
+    display: inline-block;
+    background-color: #deebff;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.iconfilter i
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    height: 40px;
+    width: 40px;
+    color: #0065FC;
+}
+
+/* Information */
+
+.iconinfo
+{
+    display: inline-block;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid grey;
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.iconinfo i
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    height: 20px;
+    width: 20px;
+    color: #0065FC;
+}

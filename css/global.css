@@ -4,6 +4,7 @@ body
 {
     font-family: 'Raleway', sans-serif;
     color: black;
+    padding: 0;
 }
 
 h1
@@ -42,11 +43,11 @@ strong
     color: #0065FC;
 }
 
-nav a:hover
+li a:hover
 {
     color: #0065FC;
-    border-top: 1px solid #0065FC;
-    padding-top: 20px;
+    border-top: 2px solid #0065FC;
+    padding-top: 25px;
     background-color: white;
 }
 

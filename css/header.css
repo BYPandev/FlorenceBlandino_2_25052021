@@ -78,7 +78,7 @@
 {
     margin-right: 40px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     border: 1px solid #f2f2f2;
     border-radius: 50px;
     padding: 0px 20px 0px 0px;
@@ -108,9 +108,9 @@ li:hover
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
-    height: 40px;
-    width: 40px;
+    font-size: 15px;
+    height: 35px;
+    width: 35px;
     color: #0065FC;
 }
 

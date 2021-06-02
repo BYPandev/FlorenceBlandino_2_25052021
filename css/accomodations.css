@@ -8,6 +8,34 @@
     margin-top: 2%;
 }
 
+#accomodations_results
+{
+    display: flex;
+    flex-direction: column;
+    width: 62%;
+    height: 100%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    justify-content: center;
+    padding: 0px 30px 0px 30px;
+}
+
+#accomodations_list
+{
+    height: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+a
+{
+    text-decoration: none;
+    color:black;
+}
+
 .box_description
 {
     display: inline-block;
@@ -16,9 +44,6 @@
     box-shadow: 2px 2px 12px #CDCAD1;
     height: 40%;
     width: 30%;
-    text-decoration: none;
-    color:black;
-    
 }
 
 .box_description img
@@ -30,6 +55,50 @@
     object-fit: cover;
 }
 
+.textdescription
+{
+    margin: 0px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textdescription h4
+{
+    margin: 0px 0px 2px 0px
+}
+
+.textdescription p
+{
+    margin: 0;
+}
+
+.stars i
+{
+    font-size: 10px;
+}
+
+.fa-star
+{
+    color: #0065FC;
+}
+
+.fa-star-2
+{
+    color: #f2f2f2;
+}
+
+aside
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    width: 25%;
+    border-radius: 20px;
+    padding: 15px;
+    justify-content: center;
+    padding: 0px 30px 0px 30px;
+}
+
 .popular_box
 {
     display: inline-block;
@@ -38,7 +107,4 @@
     box-shadow: 2px 2px 12px #CDCAD1;
     height: 28%;
     width: 100%;
-    text-decoration: none;
-    color:black;
-
 }

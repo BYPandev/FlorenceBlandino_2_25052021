@@ -46,6 +46,11 @@ a
     width: 30%;
 }
 
+.box_description strong
+{
+    color: black;
+}
+
 .box_description img
 {
     width: 97%;

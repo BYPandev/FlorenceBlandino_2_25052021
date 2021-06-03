@@ -8,6 +8,18 @@
     margin-top: 2%;
 }
 
+a
+{
+    text-decoration: none;
+    color:black;
+}
+
+#accomodations a:hover
+{
+    transition-duration: 500ms;
+    transform: scale(1.04);
+}
+
 #accomodations_results
 {
     display: flex;
@@ -28,12 +40,6 @@
     justify-content: space-between;
     align-items: center;
     
-}
-
-a
-{
-    text-decoration: none;
-    color:black;
 }
 
 .box_description

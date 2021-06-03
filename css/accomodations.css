@@ -20,6 +20,12 @@ a
     transform: scale(1.04);
 }
 
+#accomodations strong
+{
+    color: black;
+    font-weight: bold;
+}
+
 #accomodations_results
 {
     display: flex;
@@ -50,11 +56,6 @@ a
     box-shadow: 2px 2px 12px #CDCAD1;
     height: 40%;
     width: 30%;
-}
-
-.box_description strong
-{
-    color: black;
 }
 
 .box_description img

@@ -76,7 +76,7 @@ a
 
 h4
 {
-    margin: 0px 0px 2px 0px
+    margin: 0px 0px 2px 0px;
 }
 
 .textdescription p
@@ -139,7 +139,9 @@ aside h2
 
 .popular_textdescription
 {
-    padding: 15px 10px 10px 10px; 
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px 15px 10px; 
     width: 40%;  
 }
 

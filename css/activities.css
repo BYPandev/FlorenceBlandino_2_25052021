@@ -4,6 +4,8 @@
 {
     display: flex;
     flex-direction: column;
+    height: 500px;
+    margin-top: 20px
 }
 
 #activities_list
@@ -11,6 +13,8 @@
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
+    height: 80%;
+    width: 100%;
 }
 
 #activities_list a
@@ -52,7 +56,7 @@ figcaption
 
 .portrait_box
 {
-    height: 100px;
+    height: 100%;
     width: 22%;
 }
 
@@ -70,4 +74,71 @@ figcaption
 .portrait_card figcaption
 {
     height: 10%;
+}
+
+.cards_container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22%
+}
+
+#landscape_box1
+{
+    width: 100%;
+    height: 55%;
+}
+
+#landscape_card1, #landscape_card2, #landscape_card3, #landscape_card4
+{
+    width: 100%;
+    height: 100%;
+}
+
+#landscape_card1 img
+{
+    height: 82%;
+}
+
+#landscape_card1 figcaption
+{
+    height: 18%;
+}
+
+#landscape_box2
+{
+    width: 100%;
+    height: 35%;
+}
+
+#landscape_card2 img
+{
+    height: 72%;
+}
+
+#landscape_card2 figcaption
+{
+    height: 28%
+}
+
+#landscape_box3, #landscape_box4
+{
+    width: 100%;
+    height: 45%;
+}
+
+#landscape_card3 img, #landscape_card4 img
+{
+    height: 78%;
+}
+
+#landscape_card3 figcaption, #landscape_card4 figcaption
+{
+    height: 22%;
+}
+
+#landscape_card3 img
+{
+    object-position: top;
 }

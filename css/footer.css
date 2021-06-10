@@ -26,7 +26,5 @@ footer h3
 
 .footer_box a:hover
 {
-    font-weight: bolder;
+    color: #0065FC;
 }
-
-

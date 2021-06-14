@@ -137,8 +137,8 @@ ul a
     display: inline-block;
     background-color: white;
     border-radius: 50px;
-    border: 1px solid grey;
-    margin-right: 10px;
+    border: 1px solid #deebff;
+    margin-right: 8px;
     height: 20px;
     width: 20px;
 }
@@ -148,10 +148,15 @@ ul a
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 10px;
     height: 20px;
     width: 20px;
     color: #0065FC;
+}
+
+#info
+{
+    display: flex;
 }
 
 /* Mobile Media Queries */
@@ -238,6 +243,20 @@ ul a
         width: 50px;
         height: 50px;
         font-size: 18px;
+    }
+
+    .iconinfo i
+    {
+        font-size: 14px;
+        width : 25px;
+        height: 25px;
+    }
+
+    .iconinfo
+    {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
     }
 
 }

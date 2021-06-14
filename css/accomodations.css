@@ -1,11 +1,18 @@
+/* Accomodations */
+
 #accomodations
 {
-    height: 600px;
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
     margin-top: 2%;
+}
+
+#accomodations strong
+{
+    color: black;
+    font-weight: bold;
 }
 
 a
@@ -20,68 +27,9 @@ a
     transform: scale(1.04);
 }
 
-#accomodations strong
-{
-    color: black;
-    font-weight: bold;
-}
-
-#accomodations_results
+.stars
 {
     display: flex;
-    flex-direction: column;
-    width: 62%;
-    height: 100%;
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    justify-content: center;
-    padding: 0px 30px 0px 30px;
-}
-
-#accomodations_list
-{
-    height: 75%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-.box_description
-{
-    display: inline-block;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 2px 2px 12px #CDCAD1;
-    height: 40%;
-    width: 30%;
-}
-
-.box_description img
-{
-    width: 97%;
-    height: 60%;
-    margin: 1.5%;
-    border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
-}
-
-.textdescription
-{
-    margin: 0px 0px 0px 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-h4
-{
-    margin: 0px 0px 2px 0px;
-}
-
-.textdescription p
-{
-    margin: 0;
 }
 
 .stars i
@@ -99,16 +47,85 @@ h4
     color: #f2f2f2;
 }
 
+/* Accomodations results */
+
+#accomodations_results
+{
+    display: flex;
+    flex-direction: column;
+    width: 62%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 30px 30px 25px 30px;
+}
+
+#accomodations_results h2
+{
+    margin: 0;
+}
+
+#accomodations_list
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-top: 10px;
+    
+}
+
+.box_description
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px #CDCAD1;
+    height: 180px;
+    width: 30%;
+}
+
+.box_description img
+{
+    width: 97%;
+    height: 60%;
+    margin: 1.5%;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.textdescription
+{
+    padding: 5px 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 28%;
+}
+
+h4
+{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.textdescription p
+{
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+/* Most populars */
+
 aside
 {
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
     width: 25%;
-    height: 100%;
     border-radius: 20px;
-    padding: 0px 30px 0px 30px;
-    justify-content: space-around;
+    padding: 30px 30px 20px 30px;
 }
 
 aside h2
@@ -116,7 +133,16 @@ aside h2
     margin: 0;
     display: flex;
     justify-content: space-between;
-    margin-top: 8%;
+}
+
+#popular_list
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
 }
 
 .popular_box
@@ -125,7 +151,7 @@ aside h2
     background-color: white;
     border-radius: 20px;
     box-shadow: 2px 2px 12px #CDCAD1;
-    height: 23%;
+    height: 28%;
     width: 100%;
 }
 
@@ -140,12 +166,98 @@ aside h2
 .popular_textdescription
 {
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
-    padding: 15px 10px 15px 10px; 
+    padding: 15px 10px 20px 10px; 
     width: 40%;  
 }
 
 .popular_textdescription p
 {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
+    margin-top: 2px;
+}
+
+/* Mobile Media Queries */
+
+@media screen and (max-width: 767px)
+{
+    #accomodations
+    {
+        flex-direction: column-reverse;
+    }
+
+    aside
+    {
+        width: 100%;
+        border-radius: 0;
+        padding: 30px 0px 30px 0px;
+    }
+
+    aside h2 
+    {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .popular_box
+    {
+        width: 90%;
+        height: 160px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .popular_box img
+    {
+        width: 40%;
+    }
+
+    .popular_textdescription
+    {
+        width: 50%;
+    }
+
+    #accomodations_results
+    {
+        width: 100%;
+        background-color: white;
+        padding: 0;
+    }
+
+    #accomodations_results h2
+    {
+        margin: 30px 0px 20px 20px;
+    }    
+    
+    #accomodations_list
+    {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    .box_description
+    {
+        width: 100%;
+        height: 180px;
+        margin-bottom: 15px;
+    }
+
+    .textdescription
+    {
+        padding-bottom: 15px;
+    }
+
+    .stars i 
+    {
+        font-size: 12px;
+    }
+
+    #accomodations_results h3
+    {
+        width: 90%;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
 }

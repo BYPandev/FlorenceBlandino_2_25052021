@@ -16,13 +16,16 @@
 #searchbar
 {
     display: flex;
+    width: 30%;
 
 }
 
 .mapmarker
 {
+    display: inline-block;
     background-color: #f2f2f2;
-    border-radius : 1em 0em 0em 1em;
+    border-radius : 10px 0px 0px 10px;
+    width: 11%;
 }
 
 .mapmarker i
@@ -31,19 +34,21 @@
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    height: 40px;
-    width: 40px;
+    height: 100%;
 }
 
 .searchfield
 {
+    display: inline-block;
     border: 1px solid #f2f2f2;
-    padding: 8px;
+    padding: 10px;
     color: black;
     font-family: 'Raleway';
+    font-size: 12px;
     font-weight: bold;
     border-right-style: none;
     border-left-style: none;
+    width: 52%;
 
 }
 
@@ -52,11 +57,22 @@
     border: none;
     color: white;
     font-family: 'Raleway';
+    font-size: 12px;
     font-weight: bold;
     background-color: #0065FC;
-    border-radius: 0em 1em 1em 0em;
+    border-radius: 0px 10px 10px 0px;
     cursor: pointer;
+    width: 28%;
+}
 
+.searchtext
+{
+    display: block;
+}
+
+.searchicon
+{
+    display: none;
 }
 
 /* Filters */
@@ -136,4 +152,84 @@ li:hover
     height: 20px;
     width: 20px;
     color: #0065FC;
+}
+
+/* Mobile Media Queries */
+
+@media screen and (max-width: 767px)
+{
+    header
+    {
+        width: 100%;
+        margin: auto;
+    }
+
+    #searchbar
+    {
+        width: 90%;
+        height: 50px;
+        justify-content: center;
+        margin: 20px 20px 0px 20px;
+        
+    }
+
+    .mapmarker 
+    {
+        width: 15%;
+    }
+
+    .mapmarker i 
+    {
+        font-size: 18px;
+    }
+
+    .searchfield
+    {
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .searchbutton
+    {
+        width: 15%;
+        border-radius: 15px;
+        background-size: 20px;
+        position: relative;
+        left: -5px;
+    }
+
+    .searchtext
+    {
+        display: none;
+    }
+
+    .searchicon
+    {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    #filters
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+
+    #filters h3
+    {
+        margin-bottom: 0;
+    }
+
+    #filters ul 
+    {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    #filters li 
+    {
+        font-size: 14px;
+        margin: 0px 5px 7px 0px;
+    }
 }

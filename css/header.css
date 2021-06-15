@@ -1,3 +1,5 @@
+/* Page Header */
+
 #page_header
 {
     display: flex;
@@ -7,8 +9,39 @@
 
 #logo img
 {
-    width: 100px;
-    height: 50px;
+    width: 20%;
+}
+
+nav
+{
+    display: flex;
+}
+
+#main_nav
+{
+    list-style-type: none;
+    display: flex;
+}
+
+#main_nav li
+{
+    margin-right: 60px;
+}
+
+#main_nav a
+{
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 3px;
+}
+
+#main_nav li a:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top: 28px;
+    background-color: white;
 }
 
 /* Search bar */
@@ -167,6 +200,84 @@ ul a
     {
         width: 100%;
         margin: auto;
+    }
+
+    #page_header
+    {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #logo
+	{
+		width: 100%;	
+		margin-left: 20px;
+	}
+
+    #logo img
+	{
+		width: 95px;
+		height: 45px;
+	}
+
+    nav
+	{
+		width: 100%;
+	}
+
+    #main_nav
+    {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    #main_nav li 
+    {
+        padding-bottom: 20px;
+        margin: 0;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #main_nav a 
+    {
+        font-size: 16px;
+        position: relative;
+    }
+
+    #main_nav li:nth-child(3)
+    {
+        position: relative;
+        top: -60px;
+        left: -60px;
+        border-bottom: none;
+        width: 0%;
+    }
+
+    #main_nav li:nth-child(1), #main_nav li:nth-child(2)
+	{
+		border-bottom: 3px solid #f2f2f2;
+	}
+
+    #main_nav li:nth-child(1):hover, #main_nav li:nth-child(2):hover
+	{
+		color: #0065FC;
+		border-bottom: 3px solid #0065FC;
+		border-top: none;
+		background-color: white;
+	}
+
+    #nav_list li:nth-child(3):hover
+	{
+		border-top: none;
+	}
+
+    #main_nav li a:hover
+    {
+        color:#0065FC;
+        border-top: none;
+        padding-top: 0px;
     }
 
     #searchbar

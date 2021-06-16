@@ -60,3 +60,18 @@ footer h3
         font-size: 14px;
     }
 }
+
+/* Tablet Media Queries */
+
+@media screen and (min-width: 768px) and (max-width:1024px)
+{
+    footer 
+    {
+        margin-top: 0;
+    }
+
+    .footer_box 
+    {
+        margin: 5px 60px 30px 50px;
+    }
+}

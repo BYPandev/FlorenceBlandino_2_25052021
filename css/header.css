@@ -4,12 +4,13 @@
 {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 #logo img
 {
-    width: 20%;
+    width: 21%;
 }
 
 nav
@@ -39,8 +40,8 @@ nav
 #main_nav li a:hover
 {
     color: #0065FC;
-    border-top: 2px solid #0065FC;
-    padding-top: 28px;
+    border-top: 3px solid #0065FC;
+    padding-top: 23px;
     background-color: white;
 }
 
@@ -49,8 +50,7 @@ nav
 #searchbar
 {
     display: flex;
-    width: 30%;
-
+    width: 28%;
 }
 
 .mapmarker
@@ -114,18 +114,20 @@ nav
 {
     display: flex;
     align-items: center;
-
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 #filters ul
 {
     list-style: none;
     display: flex;
+    padding-left: 20px;
 }
 
 #filters li
 {
-    margin-right: 40px;
+    margin-right: 25px;
     font-weight: bold;
     font-size: 12px;
     border: 2px solid #f2f2f2;
@@ -291,6 +293,7 @@ ul a
     .mapmarker 
     {
         width: 15%;
+        border-radius : 18px 0px 0px 18px;
     }
 
     .mapmarker i 
@@ -301,7 +304,7 @@ ul a
     .searchfield
     {
         width: 70%;
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .searchbutton
@@ -344,7 +347,7 @@ ul a
 
     #filters li 
     {
-        font-size: 14px;
+        font-size: 16px;
         margin: 0px 12px 10px 0px;
         padding: 0px 20px 0px 0px;
     }
@@ -371,6 +374,8 @@ ul a
     }
 }
 
+/* Tablet Media Queries */
+
 @media screen and (min-width: 768px) and (max-width:1024px)
 {
 	#page_header
@@ -386,7 +391,7 @@ ul a
 
     #main_nav li a:hover
     {
-        padding-top: 22px;
+        padding-top: 20px;
     }
 
     #main_nav a

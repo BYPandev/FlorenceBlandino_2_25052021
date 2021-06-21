@@ -45,6 +45,18 @@ strong
     font-weight: bold;
 }
 
+header h2
+{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+header p
+{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
 /* Mobile Media Queries */
 
 @media screen and (max-width: 767px)
@@ -56,15 +68,15 @@ strong
     
     #page_block
     {
-    width: 100%;
-    margin: 0;
+        width: 100%;
+        margin: 0;
     }
 
     h2
     {
-        font-size: 20px;
+        font-size: 22px;
         width: 90%;
-        margin: auto;
+        margin: 10px 0px 0px 20px;
     }
 
     h3 
@@ -85,6 +97,7 @@ strong
     header p
     {
         margin: 10px 20px 30px 20px;
+        font-size: 16px;
     }
 }
 
@@ -97,7 +110,6 @@ strong
 		width: 100%;
 		margin: auto;
 	}
-
 
 	header
 	{

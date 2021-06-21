@@ -1,11 +1,11 @@
-/* ACTIVITIES */
+/* Activities */
 
 #activities
 {
     display: flex;
     flex-direction: column;
     height: 500px;
-    margin-top: 20px
+    margin-top: 25px
 }
 
 #activities_list
@@ -141,6 +141,8 @@ figcaption
 {
     object-position: top;
 }
+
+/* Mobile Media Queries */
 
 @media screen and (max-width: 767px)
 {
